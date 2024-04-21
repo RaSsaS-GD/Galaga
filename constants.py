@@ -12,7 +12,7 @@ LIGHT_BLUE = (135, 206, 235)
 LIGHT_GREEN = (144, 238, 144)
 
 # Player
-player_speed = 5
+player_speed = 4
 playerBullet_speed = 4
 player_shot_cooldown = 300
 player_score = 0

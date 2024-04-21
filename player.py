@@ -10,7 +10,7 @@ class Player(pygame.sprite.Sprite):
         super().__init__()
         self.image = player_image
         self.rect = self.image.get_rect()
-        self.rect.center = (c.WIDTH // 2, c.HEIGHT // 2)
+        self.rect.center = (c.WIDTH // 2, c.HEIGHT // 2 - 50)
         self.last_shot_time = 0  # Track the time of the last shot
 
     def update(self):
@@ -19,10 +19,10 @@ class Player(pygame.sprite.Sprite):
             self.rect.x -= c.player_speed
         if keys[pygame.K_RIGHT] and self.rect.right < c.WIDTH:
             self.rect.x += c.player_speed
-        if keys[pygame.K_UP] and self.rect.top > 0:
-            self.rect.y -= c.player_speed
-        if keys[pygame.K_DOWN] and self.rect.bottom < c.HEIGHT:
-            self.rect.y += c.player_speed
+        # if keys[pygame.K_UP] and self.rect.top > 0:
+        #    self.rect.y -= c.player_speed
+        # if keys[pygame.K_DOWN] and self.rect.bottom < c.HEIGHT:
+        #    self.rect.y += c.player_speed
 
         # Shooting
         if keys[pygame.K_SPACE]:
