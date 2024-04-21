@@ -2,7 +2,7 @@ import pygame
 import sys
 import constants as c
 
-from Galaga.font import get_font
+from font import get_font
 from button import Button
 from stars import create_stars
 

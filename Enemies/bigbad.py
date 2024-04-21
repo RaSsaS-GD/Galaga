@@ -1,5 +1,5 @@
 import random
-import Galaga.constants as c
+import constants as c
 
 import pygame
 
