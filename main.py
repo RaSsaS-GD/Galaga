@@ -7,7 +7,7 @@ from button import Button
 from stars import create_stars
 
 # Entities
-from player import player
+from player import player, playerBullet_group
 from Enemies.bigbad import big_bads
 
 pygame.init()
@@ -49,6 +49,8 @@ def play():
 
         all_sprites.draw(SCREEN)
         all_sprites.update()
+        playerBullet_group.draw(SCREEN)
+        playerBullet_group.update()
         pygame.display.update()
         clock.tick(c.FPS)
 

@@ -1,8 +1,6 @@
 import pygame
 import constants as c
 
-playerBullet_group = pygame.sprite.Group()
-
 player_image = pygame.image.load("Sprites/Player.png")
 playerBullet_image = pygame.image.load("Sprites/Player_Bullet.png")
 
@@ -13,7 +11,7 @@ class Player(pygame.sprite.Sprite):
         self.image = player_image
         self.rect = self.image.get_rect()
         self.rect.center = (c.WIDTH // 2, c.HEIGHT // 2)
-        self.last_shot = pygame.time.get_ticks()
+        self.last_shot_time = 0  # Track the time of the last shot
 
     def update(self):
         keys = pygame.key.get_pressed()
@@ -27,13 +25,13 @@ class Player(pygame.sprite.Sprite):
             self.rect.y += c.player_speed
 
         # Shooting
-        if keys[pygame.K_SPACE] and c.time_now - self.last_shot > c.player_shot_cooldown:
-            self.playerBullet = PlayerBullet(self.rect.centerx, self.rect.top)
-            playerBullet_group.add(self.playerBullet)
-            self.last_shot = c.time_now
-
-
-player = Player()
+        if keys[pygame.K_SPACE]:
+            current_time = pygame.time.get_ticks()  # Get the current time
+            if current_time - self.last_shot_time > c.player_shot_cooldown:
+                # Only shoot if enough time has passed since the last shot
+                self.playerBullet = PlayerBullet(self.rect.centerx, self.rect.top)
+                playerBullet_group.add(self.playerBullet)
+                self.last_shot_time = current_time  # Update the last shot time
 
 
 class PlayerBullet(pygame.sprite.Sprite):
@@ -45,3 +43,7 @@ class PlayerBullet(pygame.sprite.Sprite):
 
     def update(self):
         self.rect.y -= c.playerBullet_speed
+
+
+player = Player()
+playerBullet_group = pygame.sprite.Group()
