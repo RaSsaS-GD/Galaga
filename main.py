@@ -9,6 +9,7 @@ from stars import create_stars
 # Entities
 from player import player, playerBullet_group
 from Enemies.bigbad import big_bads
+from Enemies.zako import zako
 
 pygame.init()
 
@@ -22,6 +23,7 @@ BG = pygame.image.load("Sprites/Menus/Main_Menu.png")
 all_sprites = pygame.sprite.Group()
 all_sprites.add(player)
 all_sprites.add(big_bads)
+#all_sprites.add(zako)
 
 def play():
     while True:
@@ -38,6 +40,10 @@ def play():
 
         PLAY_BACK.changeColor(PLAY_MOUSE_POS)
         PLAY_BACK.update(SCREEN)
+
+        SCORE_TEXT = get_font(8).render(f"SCORE {c.player_score}", True, c.RED)
+        SCORE_RECT = PLAY_TEXT.get_rect(center=(c.WIDTH / 2, 4))
+        SCREEN.blit(SCORE_TEXT, SCORE_RECT)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:

@@ -10,7 +10,7 @@ class Player(pygame.sprite.Sprite):
         super().__init__()
         self.image = player_image
         self.rect = self.image.get_rect()
-        self.rect.center = (c.WIDTH // 2, c.HEIGHT // 2 - 50)
+        self.rect.center = (c.WIDTH // 2, c.HEIGHT // 2 + 100)
         self.last_shot_time = 0  # Track the time of the last shot
 
     def update(self):

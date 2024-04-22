@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e67a9fe2-7472-45f3-a5e0-fcce31ee813d" name="Changes" comment="Fixed some import settings">
+    <list default="true" id="e67a9fe2-7472-45f3-a5e0-fcce31ee813d" name="Changes" comment="Added shooting functionality">
+      <change afterPath="$PROJECT_DIR$/Enemies/zako.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enemies/bigbad.py" beforeDir="false" afterPath="$PROJECT_DIR$/Enemies/bigbad.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
@@ -14,6 +16,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,6 +40,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.main.executor": "Run",
+    "Python.player.executor": "Run",
+    "Python.zako.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -86,12 +97,29 @@
       <option name="project" value="LOCAL" />
       <updated>1713737981811</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added shooting functionality">
+      <option name="closed" value="true" />
+      <created>1713739801643</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713739801643</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added shooting functionality">
+      <option name="closed" value="true" />
+      <created>1713739866810</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713739866810</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="No changes, just the first working version of the git repository." />
     <MESSAGE value="Fixed some import settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed some import settings" />
+    <MESSAGE value="Added shooting functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added shooting functionality" />
   </component>
 </project>
