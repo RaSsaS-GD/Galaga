@@ -3,6 +3,7 @@ import constants as c
 
 import pygame
 from player import playerBullet_group
+import explosion
 
 speed = 5
 bigbad_image = pygame.image.load("Sprites/Pogo.png")
@@ -26,6 +27,7 @@ class BIGBAD(pygame.sprite.Sprite):
         hit = pygame.sprite.spritecollide(self, playerBullet_group, True)
         if hit:
             c.player_score += self.score
+            exp = explosion.explosion(self.rect.x, self.rect.y)
             self.kill()
 
 
