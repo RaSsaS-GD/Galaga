@@ -1,5 +1,6 @@
 import pygame
 import constants as c
+import sound
 
 player_image = pygame.image.load("Sprites/Player.png")
 playerBullet_image = pygame.image.load("Sprites/Player_Bullet.png")
@@ -32,6 +33,7 @@ class Player(pygame.sprite.Sprite):
                 self.playerBullet = PlayerBullet(self.rect.centerx, self.rect.top)
                 playerBullet_group.add(self.playerBullet)
                 self.last_shot_time = current_time  # Update the last shot time
+                sound.shoot.play()
 
 
 class PlayerBullet(pygame.sprite.Sprite):

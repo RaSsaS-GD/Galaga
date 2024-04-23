@@ -1,6 +1,7 @@
 import pygame
 import sys
 import constants as c
+import sound
 
 from font import get_font
 from button import Button
@@ -13,7 +14,7 @@ from Enemies.zako import zako
 
 pygame.init()
 
-SCREEN = pygame.display.set_mode((224, 288))
+SCREEN = pygame.display.set_mode((c.WIDTH, c.HEIGHT))
 pygame.display.set_caption("Galaga")
 clock = pygame.time.Clock()
 
@@ -23,19 +24,24 @@ BG = pygame.image.load("Sprites/Menus/Main_Menu.png")
 all_sprites = pygame.sprite.Group()
 all_sprites.add(player)
 all_sprites.add(big_bads)
-#all_sprites.add(zako)
+# all_sprites.add(zako)
 
 def play():
+    pygame.mixer.music.stop()
+    sound.start_level.play()
+
     while True:
+        create_stars(SCREEN, c.BLACK, c.BLACK, c.WHITE)
+
         PLAY_MOUSE_POS = pygame.mouse.get_pos()
 
         SCREEN.fill("black")
 
         PLAY_TEXT = get_font(8).render("This is the PLAY screen.", True, "White")
-        PLAY_RECT = PLAY_TEXT.get_rect(center=(c.WIDTH / 2, c.HEIGHT / 2))
+        PLAY_RECT = PLAY_TEXT.get_rect(center=(c.WIDTH / 2, c.HEIGHT / 2 + 200))
         SCREEN.blit(PLAY_TEXT, PLAY_RECT)
 
-        PLAY_BACK = Button(image=None, pos=(c.WIDTH / 2, c.HEIGHT / 2 + 40),
+        PLAY_BACK = Button(image=None, pos=(c.WIDTH / 2, c.HEIGHT / 2 + 200),
                            text_input="BACK", font=get_font(8), base_color="White", hovering_color="Green")
 
         PLAY_BACK.changeColor(PLAY_MOUSE_POS)
@@ -89,24 +95,28 @@ def options():
 
 
 def main_menu():
+    pygame.mixer.music.load("Sounds/Menu.mp3")
+    pygame.mixer.music.play(-1)
+
     while True:
-        SCREEN.blit(BG, (0, 0))
-        create_stars(SCREEN, c.LIGHT_BLUE, c.YELLOW, c.WHITE)
         SCREEN.fill("black")
 
         MENU_MOUSE_POS = pygame.mouse.get_pos()
 
         MENU_TEXT = get_font(32).render("GALAGA", True, c.LIGHT_GREEN)
         MENU_RECT = MENU_TEXT.get_rect(center=(c.WIDTH / 2, c.HEIGHT / 2 - 80))
+        SCREEN.blit(MENU_TEXT, MENU_RECT)
 
-        PLAY_BUTTON = Button(image=None, pos=(c.WIDTH / 2, c.HEIGHT / 2 - 36),
+        MENU_CREDITS_TEXT = get_font(8).render("Jaime, Luis, and Gerson", True, c.YELLOW)
+        MENU_CREDITS_RECT = MENU_TEXT.get_rect(center=(c.WIDTH / 2, c.HEIGHT / 2 - 40))
+        SCREEN.blit(MENU_CREDITS_TEXT, MENU_CREDITS_RECT)
+
+        PLAY_BUTTON = Button(image=None, pos=(c.WIDTH / 2, c.HEIGHT / 2),
                              text_input="PLAY", font=get_font(8), base_color=c.LIGHT_BLUE, hovering_color=c.WHITE)
         OPTIONS_BUTTON = Button(image=None, pos=(640, 400),
                                 text_input="OPTIONS", font=get_font(75), base_color="#d7fcd4", hovering_color=c.WHITE)
-        QUIT_BUTTON = Button(image=None, pos=(c.WIDTH / 2, c.HEIGHT / 2 + 104),
+        QUIT_BUTTON = Button(image=None, pos=(c.WIDTH / 2, c.HEIGHT / 2 + 40),
                              text_input="QUIT", font=get_font(8), base_color=c.RED, hovering_color=c.WHITE)
-
-        SCREEN.blit(MENU_TEXT, MENU_RECT)
 
         for button in [PLAY_BUTTON, OPTIONS_BUTTON, QUIT_BUTTON]:
             button.changeColor(MENU_MOUSE_POS)
@@ -124,6 +134,8 @@ def main_menu():
                 if QUIT_BUTTON.checkForInput(MENU_MOUSE_POS):
                     pygame.quit()
                     sys.exit()
+
+        create_stars(SCREEN, c.LIGHT_BLUE, c.YELLOW, c.WHITE)
 
         pygame.display.update()
 
