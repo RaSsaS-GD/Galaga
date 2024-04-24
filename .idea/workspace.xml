@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e67a9fe2-7472-45f3-a5e0-fcce31ee813d" name="Changes" comment="Added music and sound effects">
-      <change afterPath="$PROJECT_DIR$/Sprites/General.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/explosion.py" afterDir="false" />
+    <list default="true" id="e67a9fe2-7472-45f3-a5e0-fcce31ee813d" name="Changes" comment="Added score and its display">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enemies/bigbad.py" beforeDir="false" afterPath="$PROJECT_DIR$/Enemies/bigbad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stars.py" beforeDir="false" afterPath="$PROJECT_DIR$/stars.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,21 +27,15 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2fQd0ZV7h6fpn27ZFON3uK37mm7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.constants.executor": "Run",
-    "Python.explosion.executor": "Run",
     "Python.main.executor": "Run",
     "Python.player.executor": "Run",
-    "Python.sound.executor": "Run",
     "Python.zako.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -60,8 +49,6 @@
       <recent name="C:\Users\jdam1\OneDrive\Desktop\PC\Repos\Python\Galaga" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jdam1\OneDrive\Desktop\PC\Repos\Python\Galaga\Sprites" />
-      <recent name="C:\Users\jdam1\OneDrive\Desktop\PC\Repos\Python\Galaga\Sounds" />
       <recent name="C:\Users\jdam1\OneDrive\Desktop\PC\Repos\Python\Galaga" />
     </key>
   </component>
@@ -129,32 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713761747648</updated>
     </task>
-    <task id="LOCAL-00007" summary="Added score and its display">
-      <option name="closed" value="true" />
-      <created>1713765737851</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1713765737851</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added music and sound effects">
-      <option name="closed" value="true" />
-      <created>1713898145486</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1713898145486</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="No changes, just the first working version of the git repository." />
     <MESSAGE value="Fixed some import settings" />
     <MESSAGE value="Added shooting functionality" />
     <MESSAGE value="Added score and its display" />
-    <MESSAGE value="Added music and sound effects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added music and sound effects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added score and its display" />
   </component>
 </project>
