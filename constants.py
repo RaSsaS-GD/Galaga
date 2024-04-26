@@ -17,3 +17,4 @@ playerBullet_speed = 6
 player_shot_cooldown = 500
 player_score = 0
 player_name = ""
+

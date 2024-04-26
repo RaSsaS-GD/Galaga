@@ -1,15 +1,20 @@
 import pygame
 import sys
+
+import constants
 import constants as c
 import sound
 
+# Entities
 from font import get_font
 from button import Button
 from stars import create_small_stars, create_medium_stars, create_big_stars
 
 # Entities
+from Enemies.EnemyBullet import EnemyBullet
 from player import player, playerBullet_group
 from Enemies.bigbad import big_bads
+from Enemies.Pitgo import pitgos, enemyBullet_group
 from Enemies.zako import zako
 
 pygame.init()
@@ -24,9 +29,8 @@ BG = pygame.image.load("Sprites/Menus/Main_Menu.png")
 all_sprites = pygame.sprite.Group()
 all_sprites.add(player)
 all_sprites.add(big_bads)
+all_sprites.add(pitgos)
 
-
-# all_sprites.add(zako)
 
 def play():
     pygame.mixer.music.stop()
@@ -63,11 +67,18 @@ def play():
 
         all_sprites.draw(SCREEN)
         all_sprites.update()
+        enemyBullet_group.draw(SCREEN)
+        enemyBullet_group.update()
         playerBullet_group.draw(SCREEN)
         playerBullet_group.update()
 
         pygame.display.update()
         clock.tick(c.FPS)
+        if c.player_score >= 1000:
+            c.FPS = 60
+        if c.player_score >= 2000:
+            c.FPS = 90
+
 
 
 def options():
@@ -143,6 +154,8 @@ def main_menu():
         create_big_stars(SCREEN, c.WHITE)
 
         pygame.display.update()
+
+
 
 
 main_menu()
