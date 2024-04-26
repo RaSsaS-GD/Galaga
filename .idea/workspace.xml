@@ -4,52 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e67a9fe2-7472-45f3-a5e0-fcce31ee813d" name="Changes" comment="Added score and its display">
+    <list default="true" id="da634138-a67c-456f-bbd6-ba98d3d7962e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Enemies/EnemyBullet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Enemies/Pitgo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2fQd0ZV7h6fpn27ZFON3uK37mm7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2fcW6kz6KBayyNjT703Dr6XjSV3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Pitgo.executor": "Run",
+    "Python.constants.executor": "Run",
     "Python.main.executor": "Run",
-    "Python.player.executor": "Run",
-    "Python.zako.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/jdam1/OneDrive/Desktop/PC/Repos/Python/Galaga",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "last_opened_file_path": "M:/Galaga-Clone/Enemies"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jdam1\OneDrive\Desktop\PC\Repos\Python\Galaga" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jdam1\OneDrive\Desktop\PC\Repos\Python\Galaga" />
+      <recent name="M:\Galaga-Clone\Enemies" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -62,68 +55,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e67a9fe2-7472-45f3-a5e0-fcce31ee813d" name="Changes" comment="" />
-      <created>1713737012826</created>
+      <changelist id="da634138-a67c-456f-bbd6-ba98d3d7962e" name="Changes" comment="" />
+      <created>1714100672796</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1713737012826</updated>
+      <updated>1714100672796</updated>
     </task>
-    <task id="LOCAL-00001" summary="No changes, just the first working version of the git repository.">
-      <option name="closed" value="true" />
-      <created>1713737267034</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1713737267034</updated>
-    </task>
-    <task id="LOCAL-00002" summary="No changes, just the first working version of the git repository.">
-      <option name="closed" value="true" />
-      <created>1713737849735</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1713737849735</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Fixed some import settings">
-      <option name="closed" value="true" />
-      <created>1713737981811</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1713737981811</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added shooting functionality">
-      <option name="closed" value="true" />
-      <created>1713739801643</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1713739801643</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added shooting functionality">
-      <option name="closed" value="true" />
-      <created>1713739866810</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1713739866810</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added score and its display">
-      <option name="closed" value="true" />
-      <created>1713761747648</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1713761747648</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="No changes, just the first working version of the git repository." />
-    <MESSAGE value="Fixed some import settings" />
-    <MESSAGE value="Added shooting functionality" />
-    <MESSAGE value="Added score and its display" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added score and its display" />
   </component>
 </project>
